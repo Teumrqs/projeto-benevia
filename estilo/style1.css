@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    /* CORES DO SITE */
+    --cor-header: #5A4034;
+    --cor-letra-header: #C2A15D;
+    --cor-fundo: #F5E9DC;
+    --cor-destaque1: #C2A15D;
+    --cor-destaque2: #161616;
+    --cor-botoes-links: #8A8E58;
+    --cor-negritos: #6E3B3B;
+
+    /* FONTES DO SITE */
+    --fonte-títulos: "Poppins", sans-serif;
+    --fonte-destaques: "Gloria Hallelujah", cursive;
+    --fonte-padrao: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: var(--cor-header);
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 5px;
+}
+
+#logo-header {
+    max-width: 200px;
+    padding-bottom: 20px;
+}
+
+header nav {
+    font-family: var(--fonte-títulos);
+
+    & a {
+        color: white;
+        text-decoration: none;
+        margin: 25px;
+
+        &:hover {
+            transform: scale(1.1);
+            color: var(--cor-letra-header);
+            
+        }
+    }
+}
+
+body {
+    background-image: url(imgs/backgrounds/background-landpage.jpg);
+    background-color: #F5E9DC;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: var(--fonte-padrao);
+}
+
+main {
+    margin: 50px;
+}
+
+section {
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.163);
+}
+
+#section1 {
+    background-color: var(--cor-destaque1);
+    max-width: 500px;
+    min-width: 100px;
+    margin: 20px auto 50px auto;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    line-height: 1.5em;
+
+    & h1 {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: var(--cor-negritos);
+    }
+}
+
+#section1 p {
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+#section2 {
+    background-color: var(--cor-destaque1);
+    max-width: 500px;
+    min-width: 100px;
+    margin: 20px auto 50px auto;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    line-height: 1.5em;
+
+    & h2 {
+        color: var(--cor-negritos);
+        text-align: center;
+        margin: 10px;
+    }
+
+    & p {
+        text-align: center;
+        color: white;
+        margin: auto;
+    }
+}
+
+#iniciante-landpage {
+    margin: 25px auto 10px auto;
+    text-align: center;
+
+    & strong {
+        color: var(--cor-negritos);
+    }
+
+    & ion-icon {
+        font-size: 2em;
+        color: var(--cor-negritos);
+    }
+
+    & button {
+        padding: 10px 25px;
+        background-color: #6E3B3B;
+        color: white;
+        border: 1px solid var(--cor-negritos);
+        border-radius: 20px;
+        font-size: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: transparent;
+            border: 2px solid var(--cor-negritos);
+            color: var(--cor-negritos);
+            font-weight: bold;
+            transform: scale(1.1);
+        }
+    }
+}
+
+#section3 {
+    background-color: var(--cor-negritos);
+    max-width: 500px;
+    min-width: 100px;
+    margin: 20px auto 10px auto;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    line-height: 1.5em;
+
+    & .citacao {
+        color: white;
+        font-style: italic;
+        text-align: justify;
+    }
+
+    & .dono-citacao {
+        color: lightgray;
+        text-align: right;
+    }
+}
+
