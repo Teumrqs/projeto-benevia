@@ -49,7 +49,7 @@ header nav {
     }
 
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 500px) {
         font-size: 12px;
     }
 }
@@ -81,6 +81,8 @@ section {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     line-height: 1.5em;
+    animation: scroll-section1 linear;
+    animation-range: entry 0% cover 20%;
 
     & h1 {
         text-align: center;
@@ -106,6 +108,9 @@ section {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     line-height: 1.5em;
+    animation: scroll-section1;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
 
     & h2 {
         color: var(--cor-negritos);
@@ -149,7 +154,7 @@ section {
             border: 2px solid var(--cor-negritos);
             color: var(--cor-negritos);
             font-weight: bold;
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
     }
 }
@@ -176,3 +181,15 @@ section {
     }
 }
 
+
+@keyframes scroll-section1 {
+    from {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(#section1);
+        opacity: 1;
+    }
+}
