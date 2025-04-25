@@ -1,0 +1,217 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    /* CORES DO SITE */
+    --cor-header: #5A4034;
+    --cor-letra-header: #C2A15D;
+    --cor-fundo: #F5E9DC;
+    --cor-destaque1: #C2A15D;
+    --cor-destaque2: #161616;
+    --cor-botoes-links: #8A8E58;
+    --cor-negritos: #6E3B3B;
+
+    /* FONTES DO SITE */
+    --fonte-títulos: "Poppins", sans-serif;
+    --fonte-destaques: "Gloria Hallelujah", cursive;
+    --fonte-padrao: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: var(--cor-header);
+    text-align: center;
+    padding: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+#logo-header {
+    max-width: 200px;
+    padding-bottom: 20px;
+}
+
+header nav {
+    font-family: var(--fonte-títulos);
+
+    & a {
+        color: white;
+        text-decoration: none;
+        margin: 25px;
+
+        &:hover {
+            transform: scale(1.1);
+            color: var(--cor-letra-header);
+            
+        }
+    }
+}
+
+body {
+    background-image: url(imgs/backgrounds/background-dicas.jpg);
+    background-color: #F5E9DC;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: var(--fonte-padrao);
+}
+
+main {
+    margin-top: 30px;
+}
+
+#apresentacao {
+    background-color: var(--cor-header);
+    color: var(--cor-fundo);
+    text-align: center;
+    padding: 20px 0px;
+    max-width: 800px;
+    margin: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.181);
+    transition: all 0.3s ease;
+
+    & h1 {
+        font-size: 1.7em;
+        padding: 10px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    & p {
+        max-width: 450px;
+        margin: 10px auto;
+    }
+
+    @media only screen and (max-width: 600px){
+        border-radius: 0px;
+    }
+}
+
+#temas {
+    background-color: var(--cor-destaque1);
+    padding: 20px 0px;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    list-style-position: inside;
+    max-width: 800px;
+    max-height: 600px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.181);
+    transition: all 0.3s ease;
+
+    & h2 {
+        color: var(--cor-header);
+        padding: 10px;
+    }
+
+    & ul {
+        max-width: 550px;
+        margin: auto;
+        text-align: center;
+    }
+
+    & li {
+        color: var(--cor-header);
+        margin: 5px;
+        list-style: none;
+    }
+
+    & a {
+        color: var(--cor-negritos);
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+            color: var(--cor-fundo);
+        }
+
+
+        &:active {
+            color: var(--cor-fundo);
+        }
+    }
+
+    @media only screen and (max-width: 600px){
+        border-radius: 0px;
+        margin-bottom: 0px;
+        box-shadow: none;
+    }
+}
+
+#explicacao {
+    background-color: var(--cor-destaque1);
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: justify;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    & h2 {
+        padding: 10px 5px;
+        color: var(--cor-header);
+        transition: all 0.3s ease;
+
+
+        @media only screen and (max-width: 600px) {
+            text-align: center;
+        }
+    }
+
+    & p {
+        text-indent: 2em;
+    }
+
+    @media only screen and (max-width: 600px) {
+        border-radius: 0px;
+    }
+}
+
+#recomendar {
+    text-align: center;
+    background-color: var(--cor-header);
+    max-width: 800px;
+    line-height: 1.6em;
+    margin: auto auto 20px auto;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.181);
+
+    @media only screen and (max-width: 600px) {
+        padding-top: 20px;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+}
+
+#trilha {
+    background-color: var(--cor-header);
+    color: var(--cor-fundo);
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    list-style-position: inside;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+
+    & ul {
+        max-width: 300px;
+        text-align: justify;
+        margin: 10px auto;
+    }
+
+    & h3 {
+        margin-top: 20px;
+    }
+}
